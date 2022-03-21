@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da velha</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1 class="title">Jogo da velha</h1>
+  <div class="tabuleiro">
+    <div class="quadrado" id="quad-1-1"></div>
+    <div class="quadrado" id="quad-1-2"></div>
+    <div class="quadrado" id="quad-1-3"></div>
+    <div class="quadrado" id="quad-2-1"></div>
+    <div class="quadrado" id="quad-2-2"></div>
+    <div class="quadrado" id="quad-2-3"></div>
+    <div class="quadrado" id="quad-3-1"></div>
+    <div class="quadrado" id="quad-3-2"></div>
+    <div class="quadrado" id="quad-3-3"></div>
+  </div>
+  
+  <div class="jogadores">
+    <input type="text" name="jogador1" class="jogador" value="Jogador 1" id="jogador1">
+    <div class="placar">
+      <span id="score1">0</span>
+      |
+      <span id="score2">0</span>
+    </div>
+    <input type="text" name="jogador2" class="jogador" value="Jogador 2" id="jogador2">
+  </div>
+
+  <button onclick="restartGame(true)" class="btn-resetar">Resetar Jogo</button>
+
+  <div class="alertResult">
+    <h3 class="ganhador"></h3>
+    <button class="btn-comecarJogo" onclick="restartGame()">Começar outro jogo</button>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
